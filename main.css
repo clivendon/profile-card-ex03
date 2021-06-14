@@ -72,8 +72,8 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: var(--DarkCyan);
-    background-image: url(/images/bg-pattern-top.svg),
-    url(/images/bg-pattern-bottom.svg);
+    background-image: url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
     background-repeat: no-repeat;
     background-position: right 52vw bottom 42vh, left 50vw top 45vh;
     background-attachment: fixed;
