@@ -153,3 +153,8 @@ body {
     text-transform: none;
     color: hsl(0, 0%, 59%) ;
 }
+
+@media (min-width: 960px){
+    
+
+}
