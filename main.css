@@ -1,0 +1,155 @@
+/*
+ _____  _____ _____                      _   
+/  __ \/  ___/  ___|                    | |  
+| /  \/\ `--.\ `--.   _ __ ___  ___  ___| |_ 
+| |     `--. \`--. \ | '__/ _ \/ __|/ _ \ __|
+| \__/\/\__/ /\__/ / | | |  __/\__ \  __/ |_ 
+ \____/\____/\____/  |_|  \___||___/\___|\__|
+                                             */ 
+                                             
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+    --DarkCyan: hsl(185, 75%, 39%);
+    --VeryDarkBlue: hsl(229, 23%, 23%);
+    --DarkGrayishBlue: hsl(227, 10%, 46%);
+    --DarkGray: hsl(0, 0%, 59%)
+}
+/*   
+______           _       
+| ___ \         | |      
+| |_/ / ___   __| |_   _ 
+| ___ \/ _ \ / _` | | | |
+| |_/ / (_) | (_| | |_| |
+\____/ \___/ \__,_|\__, |
+                    __/ |
+                   |___/ */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--DarkCyan);
+    background-image: url(/images/bg-pattern-top.svg),
+    url(/images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right 52vw bottom 42vh, left 50vw top 45vh;
+    background-attachment: fixed;
+}
+.panel {
+    background-color: white;
+    border-radius: 10px;
+    height: 375px;
+    width: 325px;
+    max-width: 375px; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: url(/images/bg-pattern-card.svg);
+    background-position: top;
+    background-size: 325px 140px;
+    background-repeat: no-repeat;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 92px 0 25px 0;
+}
+.img img{
+    border: 8px solid white;
+    border-radius: 50%;
+}
+.name-locaiton{
+    display: flex;
+}
+.location{
+    padding: 20px 0 0 0;
+    font-family: Kumbh Sans;
+    font-weight: 400;
+    font-size: 20px;
+    color: hsl(0, 0%, 59%);
+    text-transform: none;
+    
+}
+.name{
+    font-family: Kumbh Sans;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 0 0 0 0;
+    text-transform: none;
+    
+}
+.age{
+    font-family: Kumbh Sans;
+    font-weight: 300;
+    font-size: 24px;
+    color: hsl(0, 0%, 59%);
+    padding: 0 0 0 5px;
+}
+.stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px 0 0 0;
+    padding: 15px;
+    flex-wrap: wrap;
+    border-top: 2px solid lightgray;
+}
+.stat{
+    font-family: Kumbh Sans;
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 2px;
+
+}
+.stat-category{
+    font-family: Kumbh Sans;
+    font-size: 10px;
+    text-transform: none;
+    color: hsl(0, 0%, 59%) ;
+}
